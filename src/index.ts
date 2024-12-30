@@ -97,8 +97,8 @@ export function apply(ctx: Context, config: Config) {
         const userInfoResponse = await axios.get(`${config.backendServer}/api/userinfo`, {
           headers: { Authorization: `Bearer ${accessToken}` },
         });
-        const casdoorUsername = userInfoResponse.data.name;
-
+        const casdoorUsername = userInfoResponse.data.preferred_username;
+        //logger.info(userInfoResponse.data);
         const existing = await ctx.database.get("casdoor_bindings", { id: userId });
         if (existing.length) {
           await ctx.database.set("casdoor_bindings", { id: userId }, {
