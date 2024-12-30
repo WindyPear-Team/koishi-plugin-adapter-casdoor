@@ -1,0 +1,9 @@
+casdoor:
+  tips:
+    nobind: 你还没有绑定 Casdoor 账号。
+    bindinfo: 你绑定的 Casdoor 账号是：{0}，绑定时间：{1}
+    login: |-
+      点击以下链接登录并授权：{0}
+      完成后请复制返回的链接并发送给机器人（使用命令：cas.link [链接]）。
+    linkvalid: 链接无效，请检查后重新发送。
+    bindsuccess: 绑定成功！你的 Casdoor 账号是：{0}
